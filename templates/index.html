@@ -1,0 +1,267 @@
+{%load static%}
+<!DOCTYPE html>
+
+<head>
+  <title>İlker Rişvan </title>
+  <meta charset="utf8">
+  <meta name="keywords" content="ilker rişvan">
+  <meta name="description" content="Personal Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
+   body {
+       margin: 0px;
+    }
+    
+    
+    .large-header {
+       position: relative;
+       width: 100%;
+       background: #111;
+       overflow: hidden;
+       background-size: cover;
+       background-position: center center;
+       z-index: 1;
+    }
+    
+    .demo .large-header {
+       background-image: url("https://wallpapershome.com/images/pages/pic_h/20311.jpg");
+    }
+    
+    .main-title {
+       position: absolute;
+       margin: 0;
+       padding: 0;
+       color: #e6f7ff;
+       text-align: center;
+       top: 45%;
+       left: 50%;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       -webkit-transform: translate3d(-50%, -50%, 0);
+       transform: translate3d(-50%, -50%, 0);
+    }
+    
+    .demo .main-title {
+       text-transform: uppercase;
+       font-size: 5em;
+       letter-spacing: 0.1em;
+    }
+    
+    .main-title .thin {
+       font-weight: 200;
+    }
+    @-webkit-keyframes typing { from { width: 0; } }
+    @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+    
+    .main-title .thin2 {
+       font-weight: 200;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: px;
+       
+    }
+    .main-title .name-surname {
+       font-weight: 300;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 20px;
+       color :  #f4f4f5;
+       font-style: italic;
+       border-right: .1em solid rgb(250, 249, 249);
+       white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: typing 7s steps(21, end), blink-caret .5s step-end infinite alternate;
+    }
+    
+    #menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex
+    }
+    @media only screen and (max-width: 768px) {
+       .demo .main-title {
+          font-size: 3em;
+       }
+    }
+    
+    
+    p {
+      position: relative;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 25px;
+      letter-spacing: 4px;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 6s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(230, 132, 132, 0);
+    }
+    
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
+    
+    
+    
+    .footer-social-icons {
+        width: 350px;
+        display:block;
+        margin: 0 auto;
+    }
+    .social-icon {
+        color: #fff;
+    }
+    
+    .social-icons li {
+        vertical-align: top;
+        display: inline;
+        height: 100px;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .fa-linkedin {
+        padding:10px 14px;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition: .5s;
+        
+    }
+    .fa-linkedin:hover {
+        background-color: #0073a4;
+    }
+    .fa-github {
+        padding:10px 14px;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition: .5s;
+        
+    }
+    .fa-github:hover {
+        background-color: #24292e;
+    }
+    
+    *, *:before, *:after {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    
+    
+    .mail-btn {
+      position:relative;
+      top:35%;
+      display:inline-block;
+      padding:0.5rem 1rem;
+      border:2px solid rgba(255,255,255,0.5);
+      background:none;
+      outline:none;
+      -webkit-appearance: none;
+      font-size:15PX;
+      color:rgba(255,255,255,1);
+      text-decoration:none;
+      text-transform:uppercase;
+      letter-spacing:0.5rem;
+      text-indent:0.5rem;
+      cursor:pointer;
+      transition:
+        color 1.5s .5s,
+        border 3s 1s;
+      
+    }
+    .mail-btn:before,
+    .mail-btn:after {
+      content:'';
+      position:absolute;
+      opacity:0;
+      backface-visibility:visible;
+      transform-style:preserve-3d;
+      perspective:400px;
+      transform-origin:50% -50%;
+      transform:rotateX(360deg) rotateY(0) translateX(-50%) translateY(0) scale(0.2);
+      transition:all 0.5s;
+    }
+    .mail-btn:before {
+      top:5px;
+      left:50%;
+      height:3rem;
+      background:white;
+      border-top:2rem solid #2980b9;
+      border-right:3rem solid transparent;
+      border-left:3rem solid transparent;
+    }
+    .mail-btn:after {
+      top:0;
+      left:50%;
+      border-top:2rem solid white;
+      border-right:3rem solid transparent;
+      border-left:3rem solid transparent;
+    }
+    .mail-btn:hover {
+      color:rgba(255,255,255,0);
+      border:2px solid rgba(255,255,255,0);
+      transition:
+        color .25s,
+        border .25s;
+    }
+    .mail-btn:hover:before,
+    .mail-btn:hover:after {
+      opacity:1;
+      transform:rotateX(0) rotateY(-10deg) translateX(-50%) translateY(0) scale(1);
+    }
+    
+      </style> 
+   <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="shortcut icon"  type="image/x-icon"  href="https://i.hizliresim.com/yFQuti.png">
+
+    </head>
+<html>
+   
+    <div class="container demo">
+        <div class="content">
+           <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+              <h1 class="main-title"><span class="thin">İlker</span> RİŞVAN <br><span class="name-surname">/* Computer Engineering Student */</span><br>
+                <br>
+                <div id="menu">
+                  <a href="mailto:ilkerrisvan@outlook.com" target="_blank"><button class="mail-btn" type="submit">CONTACT</button></a>
+                  <br><br>
+                  <div class="footer-social-icons">
+                     
+                     <ul class="social-icons">
+                         <li><a href="https://www.linkedin.com/in/ilker-ri%C5%9Fvan-45ab4a175/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                         <li><a href="https://github.com/ilkerrisvan" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                         
+                     </ul>
+                 </div>
+                  </div>
+                <br>
+                <p class="thin2">Full Version is Coming Soon...</p>
+               
+              
+             
+           </div>
+        </div>
+     </div>
+     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+   
+</html>
+
